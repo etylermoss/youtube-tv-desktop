@@ -1,0 +1,25 @@
+{
+  "productName": "YouTube TV Desktop",
+  "appId": "com.yttvdesktop.app",
+  "directories": {
+    "output": "dist"
+  },
+  "files": [
+    "./build/index.js",
+    "./node_modules/**/*",
+    "package.json"
+  ],
+  "linux": {
+    "target": ["AppImage"],
+    "category": "Video"
+  },
+  "mac": {
+    "category": "public.app-category.video",
+    "darkModeSupport": false,
+    "icon": "youtube-256x256.png"
+  },
+  "win": {
+    "target": "nsis",
+    "icon": "youtube-256x256.png"
+  }
+}

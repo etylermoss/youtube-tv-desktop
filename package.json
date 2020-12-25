@@ -1,27 +1,39 @@
 {
-  "name": "electron-quick-start-typescript",
+  "name": "youtube-tv-desktop",
   "version": "1.0.0",
-  "description": "A minimal Electron application written with Typescript",
-  "scripts": {
-    "build": "tsc",
-    "watch": "tsc -w",
-    "lint": "tslint -c tslint.json -p tsconfig.json",
-    "start": "npm run build && electron ./dist/main.js"
+  "description": "Electron wrapper for youtube.com/tv.",
+  "author": {
+    "name": "Eden Tyler-Moss",
+    "email": "eden@etylermoss.com",
+    "url": "https://www.etylermoss.com"
   },
-  "repository": "https://github.com/electron/electron-quick-start-typescript",
-  "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo",
-    "typescript"
-  ],
-  "author": "GitHub",
-  "license": "CC0-1.0",
+  "main": "./build/index.js",
+  "scripts": {
+    "build": "webpack --config webpack.dev.js",
+    "build-prod": "webpack --env production --config webpack.prod.js",
+    "start": "electron ./build/index.js",
+    "pack": "electron-builder --config electron-builder.json --dir -l",
+    "dist": "electron-builder --config electron-builder.json -l"
+  },
+  "repository": "https://github.com/etylermoss/youtube-tv-desktop",
+  "license": "GNU GPLv3",
   "devDependencies": {
-    "electron": "^9.0.4",
-    "tslint": "^6.1.2",
-    "typescript": "^3.9.5"
+    "@types/electron-localshortcut": "^3.1.0",
+    "@types/node": "^14.14.16",
+    "@typescript-eslint/eslint-plugin": "^4.11.0",
+    "@typescript-eslint/parser": "^4.11.0",
+    "electron": "^11.1.1",
+    "electron-builder": "^22.9.1",
+    "eslint": "^7.16.0",
+    "eslint-plugin-jsdoc": "^30.7.9",
+    "eslint-plugin-prefer-arrow": "^1.2.2",
+    "eslint-webpack-plugin": "^2.4.1",
+    "ts-loader": "^8.0.12",
+    "typescript": "^3.9.7",
+    "webpack": "^5.11.0",
+    "webpack-cli": "^4.2.0"
+  },
+  "dependencies": {
+    "electron-localshortcut": "^3.2.1"
   }
 }
