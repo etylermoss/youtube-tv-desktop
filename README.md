@@ -16,7 +16,7 @@ Note: YouTube for TV is unrelated to YouTube TV, the latter being a confusingly 
 $> git clone https://github.com/etylermoss/youtube-tv-desktop.git
 $> cd youtube-tv-desktop
 $> npm i
-$> npm run build && npm run dist # packages in ./dist/
+$> npm run build && npm run dist # packages in dist/
 ```
 	
 You can also run `npm run start` to test the app without packaging it, though you will need electron installed.
