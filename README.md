@@ -33,4 +33,4 @@ Aside from the regular controls, this app includes the following keybinds:
 
 #### Why?
 
-I know there are browser extensions ([Chrome](https://chrome.google.com/webstore/detail/youtube-for-tv/gmmbpchnelmlmndfnckechknbohhjpge), [Firefox](https://addons.mozilla.org/en-GB/firefox/addon/youtube-for-tv/), but these don't play nicely as a fullscreen experience given you have to hide/close parts of the browser (inconvenient), and would prefer to have the player as a seperate window. Yes I know it's Electron junk, don't @ me.
+I know there are browser extensions ([Chrome](https://chrome.google.com/webstore/detail/youtube-for-tv/gmmbpchnelmlmndfnckechknbohhjpge), [Firefox](https://addons.mozilla.org/en-GB/firefox/addon/youtube-for-tv/)), but these don't play nicely as a fullscreen experience given you have to hide/close parts of the browser (inconvenient), and would prefer to have the player as a seperate window. Yes I know it's Electron junk, don't @ me.
