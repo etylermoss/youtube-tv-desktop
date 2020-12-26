@@ -37,5 +37,6 @@
     "allowToChangeInstallationDirectory": true,
     "deleteAppDataOnUninstall": true,
     "runAfterFinish": false
-  }
+  },
+  "publish": "github"
 }
