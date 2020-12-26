@@ -12,8 +12,8 @@
     "build": "webpack --config webpack.dev.js",
     "build-prod": "webpack --env production --config webpack.prod.js",
     "start": "electron ./build/index.js",
-    "pack": "electron-builder --config electron-builder.json --dir -l",
-    "dist": "electron-builder --config electron-builder.json -l"
+    "pack": "electron-builder --config electron-builder.json --dir -lw",
+    "dist": "electron-builder --config electron-builder.json -lw"
   },
   "repository": "https://github.com/etylermoss/youtube-tv-desktop",
   "license": "GNU GPLv3",
