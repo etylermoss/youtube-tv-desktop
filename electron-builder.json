@@ -1,10 +1,11 @@
 {
   "productName": "YouTube TV Desktop",
   "appId": "com.yttvdesktop.app",
-  "compression": "store",
+  "compression": "maximum",
   "directories": {
-    "output": "dist"
+    "output": "dist/"
   },
+  "artifactName": "${productName}-${os}-${arch}.${ext}",
   "files": [
     "./build/index.js",
     "./node_modules/**/*",
