@@ -13,10 +13,10 @@ Note: YouTube for TV is unrelated to YouTube TV, the latter being a confusingly 
 | OS              	| Link                             	|
 |-----------------	|----------------------------------	|
 | Archlinux       	| AUR                              	|
-| Ubuntu / Debian 	| .deb                             	|
-| Linux AppImage  	| .AppImage (x86), .AppImage (ARM) 	|
-| Linux Generic   	| .tar.gz                          	|
-| Windows         	| .exe                             	|
+| Ubuntu / Debian 	| [.deb](https://github.com/etylermoss/youtube-tv-desktop/releases/latest/download/YouTube-TV-Desktop-win.exe)                             	|
+| Linux AppImage  	| [.AppImage (x86)](https://github.com/etylermoss/youtube-tv-desktop/releases/latest/download/YouTube-TV-Desktop-linux-x86_64.AppImage), [.AppImage (ARM)](https://github.com/etylermoss/youtube-tv-desktop/releases/latest/download/YouTube-TV-Desktop-linux-armv7l.AppImage) 	|
+| Linux Generic   	| [.tar.gz](https://github.com/etylermoss/youtube-tv-desktop/releases/latest/download/YouTube-TV-Desktop-linux-x64.tar.gz)                          	|
+| Windows         	| [.exe](https://github.com/etylermoss/youtube-tv-desktop/releases/latest/download/YouTube-TV-Desktop-win.exe)                             	|
 
 #### Building from source
 
