@@ -1,5 +1,6 @@
 /* 3rd party imports */
-import { join } from 'path';
+import { join, resolve } from 'path';
+import { existsSync } from 'fs';
 import { app, BrowserWindow, shell, Menu } from 'electron';
 import ElectronLocalshortcut from 'electron-localshortcut';
 
@@ -36,13 +37,18 @@ const registerShortcuts = (window: BrowserWindow): void => {
 };
 
 const createWindow = (): BrowserWindow => {
+	const localPreloadPath = join(__dirname, 'preload.js');
+	const preloadPath = existsSync(localPreloadPath)
+		? localPreloadPath
+		: resolve('/usr/share/youtube-tv-desktop-app/preload.js');
+
 	const window = new BrowserWindow({
 		width: 1280,
 		height: 720,
 		webPreferences: {
 			nodeIntegration: false,
 			contextIsolation: true,
-			preload: join(__dirname, 'preload.js'),
+			preload: preloadPath,
 		},
 	});
 
