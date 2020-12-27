@@ -28,7 +28,8 @@ module.exports = (env) => {
 				PROD: env && env.production ? env.production : false,
             }),
             new ESLintPlugin({
-                files: 'src/**/*.ts',
+				files: 'src/**/*.ts',
+				fix: true,
             }),
 		],
 	};
