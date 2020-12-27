@@ -4,12 +4,15 @@ const ESLintPlugin = require('eslint-webpack-plugin');
 
 module.exports = (env) => {
 	return {
-		entry: './index.ts',
+		entry: {
+			index: './src/index.ts',
+			preload: './src/preload.ts',
+		},
 		output: {
             path: path.resolve(__dirname, 'build'),
-            filename: 'index.js',
+            filename: '[name].js',
 		},
-		target: ['electron-main'],
+		target: ['electron-main', 'electron-preload'],
 		node:  false,
 		module: {
 			rules: [

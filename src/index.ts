@@ -1,4 +1,5 @@
 /* 3rd party imports */
+import { join } from 'path';
 import { app, BrowserWindow, shell, Menu } from 'electron';
 import ElectronLocalshortcut from 'electron-localshortcut';
 
@@ -41,6 +42,7 @@ const createWindow = (): BrowserWindow => {
 		webPreferences: {
 			nodeIntegration: false,
 			contextIsolation: true,
+			preload: join(__dirname, 'preload.js'),
 		},
 	});
 

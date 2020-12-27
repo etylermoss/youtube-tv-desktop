@@ -1,6 +1,6 @@
 {
   "name": "youtube-tv-desktop",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "Electron wrapper for youtube.com/tv.",
   "author": {
     "name": "Eden Tyler-Moss",
